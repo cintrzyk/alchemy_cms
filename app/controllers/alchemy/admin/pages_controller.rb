@@ -32,7 +32,8 @@ module Alchemy
         Page.current_preview = @page
         # Setting the locale to pages language, so the page content has it's correct translations.
         ::I18n.locale = @page.language_code
-        render layout: 'application'
+        layout = @page.controller_and_action[:controller].classify.constantize.send(:_layout)
+        render layout: layout
       end
 
       def info
