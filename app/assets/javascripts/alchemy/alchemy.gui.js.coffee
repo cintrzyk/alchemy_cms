@@ -5,7 +5,7 @@ Alchemy.GUI =
 
   # Initializes all Alchemy GUI elements in given scope
   init: (scope) ->
-    Alchemy.SelectBox(scope)
+    # Alchemy.SelectBox(scope) # disable select2 as it breaks layout
     Alchemy.Datepicker(scope)
     Alchemy.Buttons.observe(scope)
     Alchemy.watchForDialogs(scope)
