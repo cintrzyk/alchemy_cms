@@ -18,7 +18,7 @@ module Alchemy
 
       if render_fresh_page?
         respond_to do |format|
-          format.html { render layout: !request.xhr? }
+          format.html { render layout: 'landing' }
           format.rss do
             if @page.contains_feed?
               render layout: false, handlers: [:builder]
