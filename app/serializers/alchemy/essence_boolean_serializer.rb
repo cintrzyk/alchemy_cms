@@ -1,6 +1,6 @@
 module Alchemy
   class EssenceBooleanSerializer < ActiveModel::Serializer
-    self.root = false
+    # self.root = false
 
     attributes :id,
       :value,

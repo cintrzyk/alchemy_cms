@@ -11,7 +11,7 @@ module Alchemy
     protect_from_forgery
 
     before_action :mailer_set_url_options
-    before_action :set_locale
+    # before_action :set_locale
 
     helper 'alchemy/admin/form'
 
@@ -24,7 +24,8 @@ module Alchemy
     # Sets +I18n.locale+ to current Alchemy language.
     #
     def set_locale
-      ::I18n.locale = Language.current.locale
+      # binding.pry
+      # ::I18n.locale = 'en'#Language.current.locale
     end
 
     def not_found_error!(msg = "Not found \"#{request.fullpath}\"")

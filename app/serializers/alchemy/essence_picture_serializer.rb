@@ -1,6 +1,6 @@
 module Alchemy
   class EssencePictureSerializer < ActiveModel::Serializer
-    self.root = false
+    # self.root = false
 
     attributes :id,
       :picture_id,

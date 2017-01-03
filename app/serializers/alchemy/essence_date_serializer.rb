@@ -1,6 +1,6 @@
 module Alchemy
   class EssenceDateSerializer < ActiveModel::Serializer
-    self.root = false
+    # self.root = false
 
     attributes :id,
       :date,

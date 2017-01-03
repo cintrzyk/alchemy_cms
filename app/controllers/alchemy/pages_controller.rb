@@ -138,7 +138,7 @@ module Alchemy
     def render_page
       respond_to do |format|
         format.html do
-          render action: :show, layout: !request.xhr?
+          render action: :show, layout: 'landing'
         end
 
         format.rss do
